@@ -6,11 +6,14 @@ public class ArrayReverse{
         System.out.print("Nhap n: ");
         int n = ip.nextInt();
         int[] arr = new int[n];
-        System.out.print("Mang ban dau: ");
+        
         for(int i=0; i<arr.length; i++){
             arr[i] = ip.nextInt();
         }
-        ip.close();
+        System.out.print("Mang ban dau: ");
+        for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
         //Dao cac phan tu cua mang
         for(int i=0; i<arr.length; i++){
             for(int j=0; j<i+1; j++){
@@ -24,5 +27,6 @@ public class ArrayReverse{
         for(int i=0; i<arr.length; i++){
             System.out.print(arr[i] + " ");
         }
+        ip.close();
     }
 }
